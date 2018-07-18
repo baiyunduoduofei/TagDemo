@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         tagViewByViewGroup.setViewData(stringList);
 
         final TagViewByLinearLayout tagViewByLinearLayout = findViewById(R.id.tagview_by_linearlayout);
-        tagViewByViewGroup.post(new Runnable() {
+        tagViewByLinearLayout.post(new Runnable() {
             @Override
             public void run() {
                 tagViewByLinearLayout.setViewData(stringList);
